@@ -15,7 +15,7 @@ MQRCodeReaderViewController 基于 [QRCodeReaderViewController](https://github.c
 将下面代码复制进你的 `Podfile` 文件中
 
 ``` bash
-pod 'QRCodeReaderViewController', :git => 'https://github.com/zhengjinghua/MQRCodeReaderViewController.git'
+pod 'QRCodeReaderViewController', :git => 'https://github.com/rcwchew/MQRCodeReaderViewController.git'
 ```
 
 ### 手工安装
