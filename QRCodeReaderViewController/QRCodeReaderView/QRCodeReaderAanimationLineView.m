@@ -28,7 +28,8 @@
 - (void)setup {
     self.image = [UIImage imageNamed:@"QRCodeLine"]; // non-CocoaPods
     if (!self.image) {
-        self.image = [UIImage imageNamed:@"QRCodeReaderViewController.bundle/QRCodeLine"]; // CocoaPods
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        self.image = [UIImage imageNamed:@"QRCodeLine" inBundle:bundle compatibleWithTraitCollection:nil]; // CocoaPods
     }
 }
 
