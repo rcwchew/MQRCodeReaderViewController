@@ -26,7 +26,10 @@
 }
 
 - (void)setup {
-    self.image = [UIImage imageNamed:@"QRCodeLine"];
+    self.image = [UIImage imageNamed:@"QRCodeLine"]; // non-CocoaPods
+    if (!self.image) {
+        self.image = [UIImage imageNamed:@"QRCodeReaderViewController.bundle/QRCodeLine"]; // CocoaPods
+    }
 }
 
 - (void)startAnimation
